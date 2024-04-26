@@ -10,5 +10,7 @@ USER root
 
 RUN dnf install -y mysql singlestoredb-studio singlestoredb-toolbox singlestore-client
 
-# memsql
+
+RUN chown -R memsql:memsql /etc/singlestore
+# Switch back to the memsql user
 USER 999:998
