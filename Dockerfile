@@ -12,5 +12,9 @@ RUN dnf install -y mysql singlestoredb-studio singlestoredb-toolbox singlestore-
 
 
 RUN chown -R memsql:memsql /etc/singlestore
+
+RUN chgrp -R 0 /etc/singlestore \
+  && chmod -R g=u /etc/singlestore
+
 # Switch back to the memsql user
 USER 999:998
