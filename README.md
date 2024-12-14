@@ -1,3 +1,3 @@
 # singlestore
 
-alma-8.7.10-95e2357384
+alma-8.7.21-f0b8de04d5
